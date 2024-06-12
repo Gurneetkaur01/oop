@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Portal</h1>
+        <nav>
+            <a href="add_employee.html">Add Employee</a>
+            <a href="view_employees.php">View Employees</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Add Employee</h2>
+        <form action="add_employee.php" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required><br>
+            <label for="hours_worked">Hours Worked:</label>
+            <input type="number" id="hours_worked" name="hours_worked" required><br>
+            <input type="submit" value="Add Employee">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Employee Portal</p>
+    </footer>
+</body>
+</html>
